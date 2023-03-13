@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Header */
+
+.nav-bar-container{
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  align-content: center;
+}
+
+.ham-menu {
+  height: 50%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 22%;
+}
+
+.bar {
+  width: 30%;
+  height: 3px;
+  margin: 2%;
+  border-radius: 10%;
+  background-color: #000000;
+  transition: 0.5s;
+}
+
+.navbar-logo {
+  width: 5em;
+  height: 5em;
+  margin-bottom: 10%;
+}
+
+.desktop-navbar {
+  display: none;
+}
+
+/* Header button */
+
+.ham-menu.active .bar-1 {
+  transform: rotate(45deg);
+}
+
+.ham-menu.active .bar-2 {
+  transition: 0.1s;
+  visibility: hidden;
+}
+
+.ham-menu.active .bar-3 {
+  transform: translateY(-12px) rotate(-45deg);
+}
+
+/* Offcanvas Menu */
+
+.mobile-navbar{
+  display: none;
+}
+
+.mobile-navbar.active {
+  display: block;
+  margin-bottom: -5%;
+  z-index: 1;
+  height: 100vh;
+  width: calc(100vw);
+  background-color: rgb(39 42 50);
+  opacity: 0.95;
+  position: absolute;
+  z-index: 10;
+}
+
+.offcanvas-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offcanvas-menu-item {
+  margin: 3%;
+  border-top: 1px solid rgb(60, 63, 70);
+  padding: 10px 25px;
+}
+
+.first-offcanvas-menu-item {
+  margin-top: 10%;
+}
+
+.offcanvas-menu-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* Invisible class */
+.invisible {
+  display: none;
+}
+
+/* Main Invite */
+
+.main-invite-container {
+  background-image: url(../media/main-invite-bacground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-container {
+  padding: 20px;
+}
+
+.invite-subtitle {
+  color: #ec5242;
+  font-size: 1.5em;
+}
+
+.invite-title {
+  background-image: url(../media/text-image.jpg);
+  text-transform: uppercase;
+  background-repeat: repeat;
+  background-size: contain;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 48px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.text-container {
+  padding: 20px;
+  text-align: justify;
+  margin-top: -10%;
+  word-break: break-all;
+  font-size: 0.82em;
+}
+
+.date-info {
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.location-info {
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+}

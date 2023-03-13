@@ -1,26 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS Linked -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- Boostrap Linked -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Lato Font Linked -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&amp;family=Lexend+Deca:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <!-- AOS (Animation On Scroll) Linked  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Document</title>
 </head>
+
 <body>
-  
+
+  <header>
+    <div>
+      <nav class="nav-bar-container">
+        <div class="ham-menu" id="ham-menu">
+          <div class="bar bar-1"></div>
+          <div class="bar bar-2"></div>
+          <div class="bar bar-3"></div>
+        </div>
+        <div>
+          <a href="#"><img src="media/cogress-logo.png" alt="Congress Logo" class="navbar-logo"></a>
+        </div>
+        <ul class="desktop-navbar">
+          <li><a href="pages/aboutme.html">About</a></li>
+          <li><a href="#">Program</a></li>
+          <li><a href="#">Speakers</a></li>
+          <li><a href="#">Sponsers</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#">Campain</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- OffCanvas Menu -->
+    <aside class="mobile-navbar">
+      <ul class="offcanvas-menu">
+        <li class="offcanvas-menu-item first-offcanvas-menu-item"><a class="offcanvas-menu-link" href="pages/aboutme.html">About</a></li>
+        <div class="offcanvas-bar"></div>
+        <li class="offcanvas-menu-item"><a class="offcanvas-menu-link" href="#">Program</a></li>
+        <div class="offcanvas-bar"></div>
+        <li class="offcanvas-menu-item"><a class="offcanvas-menu-link" href="#">Speakers</a></li>
+        <div class="offcanvas-bar"></div>
+        <li class="offcanvas-menu-item"><a class="offcanvas-menu-link" href="#">Sponsers</a></li>
+        <div class="offcanvas-bar"></div>
+        <li class="offcanvas-menu-item"><a class="offcanvas-menu-link" href="#"></a></li>
+        <div class="offcanvas-bar"></div>
+        <li class="offcanvas-menu-item"><a class="offcanvas-menu-link" href="#">Campain</a></li>
+        <div class="offcanvas-bar"></div>
+
+      </ul>
+    </aside>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container main-invite-container">
+    <div class="title-container">
+      <h3 class="invite-subtitle">Welcome to the</h3>
+      <h1 class="invite-title">Technology, Knowledge & Society 19th Conference</h1>
+    </div>
+    <div class="text-container">
+      <p>The Nineteenth International Conference on Technology, Knowledge, and Society is brought together by a shared interest in the complex and subtle relationships between technology, knowledge and society. We seek to build an epistemic community where we can make linkages across disciplinary, geographic, and cultural boundaries. As a Research Network we are defined by our scope and concerns and motivated to build strategies for action framed by our shared themes and tensions.</p>
+    </div>
+    <div class="location-container">
+      <h2 class="date-info">13 - 14 April 2023</h2>
+      <h3 class="location-info">University of Malta, Malta + Online</h3>
+    </div>
+  </section>
+
+  <!-- Program Info Section -->
+
+  <section>
+    <div></div>
+  </section>
+
+
+  <!-- Main Speakers Section -->
+
+  <section>
+    <div></div>
+  </section>
+
+  <!-- Partners Section -->
+
+  <section>
+    <div></div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div></div>
+  </footer>
 
 
 
 
-
-
-
-
-
-  
   <!-- Linked JS -->
   <script src="javascript/index.js"></script>
+  <!-- Linked Boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- Linked AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
+
 </html>
