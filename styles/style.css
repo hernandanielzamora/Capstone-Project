@@ -16,6 +16,10 @@ a {
 }
 
 /* Header */
+.desktop-header-bar {
+  display: none;
+}
+
 .nav-bar-container {
   display: flex;
   justify-content: baseline;
@@ -274,7 +278,6 @@ a {
 
 .blank-space {
   width: 24px;
-  border-top: 1px solid #c2c2c2;
   margin-bottom: 3.4em;
 }
 
@@ -329,6 +332,7 @@ a {
 .social-title {
   color: #fff;
   padding-top: 40%;
+  font-size: 1.5em;
 }
 
 .social-list-cont {
@@ -338,6 +342,10 @@ a {
   margin: inherit;
   padding: inherit;
   margin-top: 10%;
+}
+
+.social-item {
+  margin-right: 5%;
 }
 
 .social-item i {
@@ -355,6 +363,7 @@ a {
 
 .support-title {
   color: #fff;
+  font-size: 1.5em;
 }
 
 .support-text {
@@ -375,6 +384,7 @@ a {
 
 .contact-title {
   margin-bottom: 5%;
+  font-size: 1.2em;
 }
 
 .contact-item-lastlist {
@@ -445,7 +455,6 @@ a {
 }
 
 /* About - Scholar Section */
-
 .scholar-section {
   border-bottom: 1px solid #dfdfdf;
 }
@@ -473,7 +482,6 @@ a {
 }
 
 /* About - Bookstore Section */
-
 .bookstore-section {
   margin-top: 20%;
   margin-bottom: 20%;
@@ -486,4 +494,415 @@ a {
 
 .bookstore-content {
   text-align: center;
+}
+
+/* DESKTOP VERSION */
+
+/* QUERY 768 -> 1024 */
+
+/* 768 changes */
+@media only screen and (min-width: 768px) {
+  /* Header Desktop Bar */
+  .desktop-header-bar {
+    display: flex;
+    height: 2em;
+    background-color: rgb(62, 62, 62);
+  }
+
+  .header-bar-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 80%;
+    width: 100%;
+    padding-top: 1%;
+  }
+
+  .header-bar-item {
+    color: #fff;
+  }
+
+  .header-bar-item i {
+    color: #fff;
+  }
+
+  /* Header Nav Bar */
+  .nav-bar-container {
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 2px 8px 1px;
+  }
+
+  .ham-menu {
+    display: none;
+  }
+
+  .desktop-navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    align-items: center;
+    margin-left: 30%;
+  }
+
+  .navbar-logo {
+    margin-left: 20%;
+    margin-top: 2%;
+  }
+
+  .desktop-link {
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+  }
+
+  .desktop-link:hover {
+    color: #ec5242;
+  }
+
+  .last-desktop-link {
+    background-color: #ec5242;
+    padding: 10px;
+    color: #fff;
+  }
+
+  .last-desktop-link:hover {
+    background-color: #272a32;
+  }
+
+  .active-link-desktop {
+    color: #ec5242;
+  }
+
+  /* Hero Section */
+  .invite-holder {
+    margin: auto 20% 2% 10%;
+    padding-top: 6%;
+  }
+
+  .invite-title {
+    margin-bottom: 10%;
+    width: 80%;
+    font-size: 3em;
+  }
+
+  .text-container {
+    font-size: 1em;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: rgb(247, 247, 248);
+  }
+
+  /* Program */
+  .program-content {
+    margin: auto auto 5% 3px;
+    padding-top: 2%;
+    float: left;
+    width: calc(20% - 3px);
+    height: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    display: block;
+    text-align: center;
+  }
+
+  .program-subtitle {
+    text-align: center;
+    width: auto;
+    font-size: 1.5em;
+  }
+
+  .program-text {
+    padding: auto;
+    width: 100%;
+    margin-top: auto;
+    font-size: 0.75em;
+  }
+
+  /* Main Speakers */
+  .speaker {
+    margin: 12% auto auto 10px;
+    width: calc(50% - 10px);
+    float: left;
+    height: 15em;
+  }
+
+  .speaker-text {
+    font-size: 0.9em;
+  }
+
+  .show-all-speakers {
+    padding-top: 155%;
+  }
+
+  /* Sponsors */
+  .sponsors-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+  }
+
+  .sponsor {
+    margin: 10%;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* ABOUT ME PAGE */
+
+  /* Main Section */
+  .aboutme-header {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .aboutme-title {
+    font-size: 3em;
+    font-weight: 800;
+  }
+
+  .aboutme-first-description {
+    font-size: 1.3em;
+  }
+
+  .aboutme-second-description {
+    font-size: 1.3em;
+  }
+
+  /* Scholar Section */
+
+  .scholar-title {
+    font-size: 2em;
+    margin-top: -10%;
+  }
+
+  .scholar-subtitle {
+    font-size: 1.5em;
+  }
+
+  /* Bookstore Section */
+
+  .bookstore-title {
+    font-size: 2em;
+    margin-top: -10%;
+  }
+}
+
+/* QUERY 1024 -> 1440 */
+
+/* 1024 changes */
+@media only screen and (min-width: 1024px) {
+  /* Main Program */
+  .card-holder {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .program-content {
+    width: calc(20% - 3px);
+  }
+
+  /* Speakers section */
+  .speaker {
+    margin-top: 3%;
+  }
+
+  .speaker-name {
+    font-size: 2em;
+    margin-top: -1%;
+  }
+
+  .speaker-position {
+    font-size: 1em;
+  }
+
+  .blank-space {
+    margin-bottom: 10px;
+  }
+
+  .speaker-text {
+    font-size: 1em;
+  }
+
+  .show-all-speakers {
+    padding-top: 90%;
+  }
+
+  /* Partners */
+  .sponsors-container {
+    margin-left: 15%;
+  }
+
+  .sponsor {
+    margin: 10%;
+  }
+
+  /* Footer */
+  .social {
+    margin-top: -10%;
+  }
+
+  .support {
+    margin-top: -1%;
+    margin-left: 5%;
+  }
+
+  /* ABOUTME PAGE */
+
+  /* Main */
+  .aboutme-title {
+    font-size: 4em;
+  }
+
+  .aboutme-second-description {
+    background-color: #fff;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: -5%;
+  }
+}
+
+/* QUERY 1440 -> 2560 */
+
+/* 1440 changes */
+@media only screen and (min-width: 1440px) {
+  /* Header */
+  .navbar-logo {
+    margin-left: 200%;
+  }
+
+  .desktop-link {
+    font-size: 1.5em;
+  }
+
+  /* Main Invite */
+  .invite-subtitle {
+    font-size: 2em;
+  }
+
+  .invite-title {
+    font-size: 4em;
+  }
+
+  .text-container {
+    width: 80%;
+    font-size: 1.2em;
+  }
+
+  .date-info {
+    width: 30%;
+    font-size: 2em;
+  }
+
+  .location-info {
+    width: 55%;
+    font-size: 2em;
+  }
+
+  /* Program Info */
+  .program-title {
+    padding-top: 5%;
+    font-size: 2.5em;
+  }
+
+  .card-holder {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+
+  .program-content {
+    width: calc(20% - 3px);
+  }
+
+  .program-text {
+    font-size: 0.85em;
+  }
+
+  .show-all-program a {
+    font-size: 1.5em;
+  }
+
+  /* Speakers */
+
+  .speakers-list {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .speaker {
+    margin-top: 10%;
+  }
+
+  .speakers-title {
+    font-size: 3em;
+    margin-top: -5%;
+  }
+
+  .speaker-position {
+    font-size: 1.5em;
+  }
+
+  .speaker-text {
+    font-size: 1.2em;
+  }
+
+  .show-all-speakers {
+    font-size: 1.5em;
+    padding-top: 89%;
+  }
+
+  /* Partners */
+
+  .sponsors-title {
+    font-size: 3em;
+  }
+
+  .sponsors-container {
+    margin-left: 20%;
+  }
+
+  /* Footer */
+  .social {
+    margin-left: 5%;
+  }
+
+  .social-title {
+    font-size: 2em;
+  }
+
+  .support-title {
+    font-size: 2em;
+  }
+
+  .support-text {
+    font-size: 1.5em;
+  }
+
+  .contact-title {
+    font-size: 2em;
+  }
+
+  .contact-item {
+    font-size: 1.5em;
+  }
+
+  /* ABOUT ME */
+
+  /* Main */
+
+  .aboutme-title {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .aboutme-first-description {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .aboutme-second-description {
+    width: 65%;
+  }
 }

@@ -78,7 +78,7 @@ const renderSpeakers = (speakers, containerName) => {
     card.classList = 'speaker';
     card.innerHTML = ` <div class="speaker-image"><img src="${item.img}" alt="${item.name}"></div>
     <div class="speaker-name">
-      <a href="${item.link}"> Georgios Yannakakis</a>
+      <a href="${item.link}">${item.name}</a>
     </div>
     <div class="speaker-position">${item.position}</div>
     <div class="blank-space"></div>

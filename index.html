@@ -25,8 +25,20 @@
 
 <body>
 
+  <!-- Header -->
   <header>
     <div>
+      <!-- Desktop Header Bar -->
+      <div class="desktop-header-bar">
+        <ul class="header-bar-container">
+          <li class="header-bar-item"><a href="https://www.facebook.com/TechnologyKnowledgeandSociety"><i
+                class="fa-brands fa-square-facebook fa-lg"></i></a></li>
+          <li class="header-bar-item"><a href="https://twitter.com/ontechsociety"><i
+                class="fa-brands fa-square-twitter fa-lg"></i></a></li>
+          <li class="header-bar-item">English</li>
+        </ul>
+      </div>
+
       <nav class="nav-bar-container">
         <div class="ham-menu" id="ham-menu">
           <div class="bar bar-1"></div>
@@ -37,11 +49,12 @@
           <a href="#"><img src="media/cogress-logo.png" alt="Congress Logo" class="navbar-logo"></a>
         </div>
         <ul class="desktop-navbar">
-          <li><a href="pages/aboutme.html">About</a></li>
-          <li><a href="#">Program</a></li>
-          <li><a href="#">Speakers</a></li>
-          <li><a href="#">Sponsers</a></li>
-          <li><a href="#">Campain</a></li>
+          <li class="desktop-list"><a class="desktop-link active-link-desktop" href="pages/aboutme.html">About</a></li>
+          <li class="desktop-list"><a class="desktop-link" href="#program">Program</a></li>
+          <li class="desktop-list"><a class="desktop-link" href="#speakers">Speakers</a></li>
+          <li class="desktop-list"><a class="desktop-link" href="#sponsers">Sponsers</a></li>
+          <li class="desktop-list"><a class="desktop-link last-desktop-link" href="https://techandsoc.com/2023-conference">Campain</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -58,31 +71,33 @@
         <div class="offcanvas-bar"></div>
         <li class="offcanvas-menu-item"><a class="offcanvas-menu-link" href="#sponsers">Sponsers</a></li>
         <div class="offcanvas-bar"></div>
-        <li class="offcanvas-menu-item"><a class="offcanvas-menu-link" href="https://techandsoc.com/2023-conference">Campain</a></li>
+        <li class="offcanvas-menu-item"><a class="offcanvas-menu-link"
+            href="https://techandsoc.com/2023-conference">Campain</a></li>
         <div class="offcanvas-bar"></div>
       </ul>
     </aside>
-
-    <!-- Desktop Header Bar -->
-
   </header>
 
   <!-- Hero Section -->
-  <section class="container main-invite-container">
-    <div class="title-container">
-      <h3 class="invite-subtitle">Welcome to the</h3>
-      <h1 class="invite-title">Technology, Knowledge & Society 19th Conference</h1>
-    </div>
-    <div class="text-container">
-      <p>The Nineteenth International Conference on Technology, Knowledge, and Society is brought together by a shared
-        interest in the complex and subtle relationships between technology, knowledge and society. We seek to build an
-        epistemic community where we can make linkages across disciplinary, geographic, and cultural boundaries. As a
-        Research Network we are defined by our scope and concerns and motivated to build strategies for action framed by
-        our shared themes and tensions.</p>
-    </div>
-    <div class="location-container">
-      <h2 class="date-info">13 - 14 April 2023</h2>
-      <h3 class="location-info">University of Malta, Malta + Online</h3>
+  <section class="main-invite-container">
+    <div class="invite-holder">
+      <div class="title-container">
+        <h3 class="invite-subtitle">Welcome to the</h3>
+        <h1 class="invite-title">Technology Knowledge & Society 19th Conference</h1>
+      </div>
+      <div class="text-container">
+        <p>The Nineteenth International Conference on Technology, Knowledge, and Society is brought together by a shared
+          interest in the complex and subtle relationships between technology, knowledge and society. We seek to build
+          an
+          epistemic community where we can make linkages across disciplinary, geographic, and cultural boundaries. As a
+          Research Network we are defined by our scope and concerns and motivated to build strategies for action framed
+          by
+          our shared themes and tensions.</p>
+      </div>
+      <div class="location-container">
+        <h2 class="date-info">13 - 14 April 2023</h2>
+        <h3 class="location-info">University of Malta, Malta + Online</h3>
+      </div>
     </div>
   </section>
 
@@ -94,49 +109,59 @@
       <div class="program-bar"></div>
     </div>
 
-    <div class="program-content">
-      <div class="program-image">
-        <img src="media/program_icon_01.png" alt="">
+    <div class="card-holder">
+      <div class="program-content">
+        <div class="program-image">
+          <img src="media/program_icon_01.png" alt="">
+        </div>
+        <h3 class="program-subtitle">Lecture</h3>
+        <p class="program-text">Listen to our main and secondary speakers. Take the chance to chat with them in our
+          blended sessions!</p>
       </div>
-      <h3 class="program-subtitle">Lecture</h3>
-      <p class="program-text">Listen to our main and secondary speakers. Take the chance to chat with them in our blended sessions!</p>
+
+      <div class="program-content">
+        <div class="program-image">
+          <img src="media/program_icon_02.png" alt="">
+        </div>
+        <h3 class="program-subtitle">Content</h3>
+        <p class="program-text">Theme 1: Histories of Technology - Theme 2: Knowledge Makers - Theme 3: Social Realities
+        </p>
+      </div>
+
+      <div class="program-content">
+        <div class="program-image">
+          <img src="media/program_icon_03.png" alt="">
+        </div>
+        <h3 class="program-subtitle">Forum</h3>
+        <p class="program-text">Learn more about the conference in our forums, where you can chat with other
+          participants.
+        </p>
+      </div>
+
+      <div class="program-content">
+        <div class="program-image">
+          <img src="media/program_icon_04.png" alt="">
+        </div>
+        <h3 class="program-subtitle">Events</h3>
+        <p class="program-text">Take part in special events in between conferences. Participate of Conference Dinner, In
+          Person Blended Valletta Walking Tour, and much more! </p>
+      </div>
+
+      <div class="program-content">
+        <div class="program-image">
+          <img src="media/program_icon_05.png" alt="">
+        </div>
+        <h3 class="program-subtitle">Blended</h3>
+        <p class="program-text">You can also take part of our blended sessions, explicitly designed to make the most of
+          both online and in-person social knowledge processes</p>
+      </div>
+
+      <div class="show-all-program">
+        <a href="https://cgscholar.com/cg_event/events/T23en/schedule">See the whole program ></a>
+      </div>
     </div>
 
-    <div class="program-content">
-      <div class="program-image">
-        <img src="media/program_icon_02.png" alt="">
-      </div>
-      <h3 class="program-subtitle">Content</h3>
-      <p class="program-text">Theme 1: Histories of Technology - Theme 2: Knowledge Makers - Theme 3: Social Realities</p>
-    </div>
 
-    <div class="program-content">
-      <div class="program-image">
-        <img src="media/program_icon_03.png" alt="">
-      </div>
-      <h3 class="program-subtitle">Forum</h3>
-      <p class="program-text">Learn more about the conference in our forums, where you can chat with other participants.</p>
-    </div>
-
-    <div class="program-content">
-      <div class="program-image">
-        <img src="media/program_icon_04.png" alt="">
-      </div>
-      <h3 class="program-subtitle">Events</h3>
-      <p class="program-text">Take part in special events in between conferences. Participate of Conference Dinner, In Person Blended Valletta Walking Tour, and much more! </p>
-    </div>
-
-    <div class="program-content">
-      <div class="program-image">
-        <img src="media/program_icon_05.png" alt="">
-      </div>
-      <h3 class="program-subtitle">Blended</h3>
-      <p class="program-text">You can also take part of our blended sessions, explicitly designed to make the most of both online and in-person social knowledge processes</p>
-    </div>
-
-    <div class="show-all-program">
-      <a href="https://cgscholar.com/cg_event/events/T23en/schedule">See the whole program ></a>
-    </div>
 
   </section>
 
@@ -181,15 +206,15 @@
         <h5 class="social-title">Stay Connected</h3>
           <ul class="social-list-cont">
             <li class="social-item"><a href="https://www.facebook.com/TechnologyKnowledgeandSociety"><i
-                  class="fa-brands fa-square-facebook fa-lg"></i></a></li>
+                  class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
             <li class="social-item"><a href="https://twitter.com/ontechsociety"><i
-                  class="fa-brands fa-square-twitter fa-lg"></i></a></li>
+                  class="fa-brands fa-square-twitter fa-2xl"></i></a></li>
             <li class="social-item"><a href="https://www.instagram.com/commongroundresearchnetworks/"><i
-                  class="fa-brands fa-square-instagram fa-lg"></i></a></li>
-            <li class="social-item"><a href="https://www.youtube.com/playlist?list=PLA33E7B00ECD9B616"
-              ><i class="fa-brands fa-square-youtube fa-lg"></i></a></li>
-            <li class="social-item"><a href="https://www.linkedin.com/company/common-ground-research-networks/"
-              ><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
+                  class="fa-brands fa-square-instagram fa-2xl"></i></a></li>
+            <li class="social-item"><a href="https://www.youtube.com/playlist?list=PLA33E7B00ECD9B616"><i
+                  class="fa-brands fa-square-youtube fa-2xl"></i></a></li>
+            <li class="social-item"><a href="https://www.linkedin.com/company/common-ground-research-networks/"><i
+                  class="fa-brands fa-linkedin fa-2xl"></i></a></li>
           </ul>
       </div>
 
