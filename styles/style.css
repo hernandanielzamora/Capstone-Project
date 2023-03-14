@@ -6,17 +6,17 @@
   font-family: 'Lato', sans-serif;
 }
 
-li{
+/* INDEX PAGE */
+li {
   list-style-type: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 /* Header */
-
-.nav-bar-container{
+.nav-bar-container {
   display: flex;
   justify-content: baseline;
   align-items: center;
@@ -38,7 +38,7 @@ a{
   height: 3px;
   margin: 2%;
   border-radius: 10%;
-  background-color: #000000;
+  background-color: #000;
   transition: 0.5s;
 }
 
@@ -53,7 +53,6 @@ a{
 }
 
 /* Header button */
-
 .ham-menu.active .bar-1 {
   transform: rotate(45deg);
 }
@@ -68,15 +67,13 @@ a{
 }
 
 /* Offcanvas Menu */
-
-.mobile-navbar{
+.mobile-navbar {
   display: none;
 }
 
 .mobile-navbar.active {
   display: block;
   margin-bottom: -5%;
-  z-index: 1;
   height: 100vh;
   width: calc(100vw);
   background-color: rgb(39 42 50);
@@ -112,11 +109,11 @@ a{
 }
 
 /* Main Invite */
-
 .main-invite-container {
   background-image: url(../media/main-invite-bacground.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 10%;
 }
 
 .title-container {
@@ -163,5 +160,330 @@ a{
   font-size: 1.3em;
   font-weight: bold;
   width: 90%;
+  text-align: center;
+}
+
+/* Program Info Section */
+.program-container {
+  background-image: url(../media/program-info-background.png);
+  background-repeat: repeat;
+  background-color: #272a32;
+  padding-bottom: 10%;
+}
+
+.program-title {
+  color: #fff;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.program-bar {
+  width: 3em;
+  height: 1em;
+  border-bottom: 1px solid #ef513c;
+  margin: 1px auto 3em;
+}
+
+.program-image {
+  margin-left: 3%;
+}
+
+.program-content {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.program-subtitle {
+  color: #ef513c;
+  font-size: 0.875em;
+  text-align: center;
+  width: 26%;
+  padding-left: 7px;
+  line-height: 52px;
+  margin-left: -5%;
+}
+
+.program-text {
+  color: #fff;
+  font-size: 0.75em;
+  padding: 0 0.5em 0 0;
+  word-break: keep-all;
+  overflow: auto;
+  height: auto;
+  width: calc(74% - 6.5em);
+  margin-top: 5%;
+}
+
+.show-all-program {
+  text-align: right;
+  padding-top: 5%;
+  margin-right: 2%;
+}
+
+.show-all-program a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+}
+
+/* Speakers */
+.speakers-container {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.speakers-title {
+  color: #272a32;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.speaker {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5em;
+  margin-left: 0;
+}
+
+.speaker-image {
+  margin-right: 0.5em;
+  margin-left: 2em;
+  float: left;
+}
+
+.speaker-name {
+  text-align: left;
+  vertical-align: bottom;
+  font-size: 1em;
+  margin-top: 0.2em;
+}
+
+.speaker-name a {
+  text-decoration: none;
+  color: #272a32;
+}
+
+.speaker-position {
+  font-size: 0.81em;
+  color: #ff4f38;
+  text-align: left;
+}
+
+.blank-space {
+  width: 24px;
+  border-top: 1px solid #c2c2c2;
+  margin-bottom: 3.4em;
+}
+
+.speaker-text {
+  padding: 1px 2em;
+  text-align: justify;
+  font-size: 0.81em;
+}
+
+.show-all-speakers {
+  text-align: right;
+  padding-bottom: 8%;
+}
+
+.show-all-speakers a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 4%;
+  font-size: 1em;
+}
+
+/* Sponsors */
+.sponsors-title {
+  color: #272a32;
+  text-align: center;
+  padding-top: 10%;
+  margin-top: 5%;
+}
+
+.sponsors-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor {
+  margin-bottom: 5%;
+}
+
+/* Footer */
+
+/* Footer (Social) */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f1b26;
+}
+
+.social-title {
+  color: #fff;
+  padding-top: 40%;
+}
+
+.social-list-cont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: inherit;
+  padding: inherit;
+  margin-top: 10%;
+}
+
+.social-item i {
+  color: #e0dcdc;
+}
+
+/* Footer (Support) */
+.support {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.support-title {
+  color: #fff;
+}
+
+.support-text {
+  color: #fff;
+  padding: 1% 5%;
+}
+
+.support-text a {
+  text-decoration: none;
+  color: #ec5242;
+}
+
+/* Footer (Contact) */
+.contact {
+  color: #fff;
+  margin-top: 5%;
+}
+
+.contact-title {
+  margin-bottom: 5%;
+}
+
+.contact-item-lastlist {
+  margin-bottom: 5%;
+}
+
+/* ABOUT PAGE */
+
+/* Header */
+.active-link {
+  color: #ef513c;
+}
+
+/* About Main Section */
+.aboutme-main {
+  background-image: url(../media/about_bg_01.png);
+  background-color: #f7f7f8;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  overflow: auto;
+  border-bottom: 1px solid #dfdfdf;
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+.aboutme-title {
+  text-align: center;
+  color: #ff4f38;
+  font-size: 2em;
+  font-weight: 900;
+  margin-top: 10%;
+}
+
+.aboutme-bar {
+  width: 53px;
+  height: 16px;
+  border-bottom: 1px solid #ef513c;
+  margin: 0 auto 54px;
+}
+
+.aboutme-first-description p {
+  padding: 0.1% 10%;
+  margin-bottom: 10%;
+  text-align: justify;
+}
+
+.aboutme-second-description {
+  background-origin: #fff;
+  font-size: 0.9em;
+  border: 1px solid #dfdfdf;
+  padding: 20px 20px;
+  width: calc(100% - 40px);
+  text-align: justify;
+  word-break: keep-all;
+  height: auto;
+  overflow: auto;
+  margin: 0 auto 2em auto;
+}
+
+.split-div {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.extra-text {
+  text-align: center;
+}
+
+/* About - Scholar Section */
+
+.scholar-section {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.scholar-title {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.scholar-subtitle {
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin-bottom: 10%;
+  padding: 1% 10%;
+}
+
+.scholar-img-container {
+  text-align: center;
+}
+
+.scholar-img-container img {
+  width: 70%;
+  margin-bottom: 20%;
+}
+
+/* About - Bookstore Section */
+
+.bookstore-section {
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.bookstore-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.bookstore-content {
   text-align: center;
 }
