@@ -119,7 +119,7 @@ In order to run this project you need:
 
 Walking through portfolio outline.
 
-- [Project Presentation Link] 
+- [Project Presentation Link](https://www.loom.com/share/d799b02cc2814c5fb12cb486fa0a7c08)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
