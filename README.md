@@ -110,6 +110,9 @@ In order to run this project you need:
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://hernandanielzamora.github.io/Capstone-Project/)
+
 <!-- Project Presntation -->
 
 ## :movie_camera: Project Presentation <a name="project-presentation"></a>
@@ -120,7 +123,7 @@ Walking through portfolio outline.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- [Live Demo Link](https://hernandanielzamora.github.io/Capstone-Project/)
+
 
 <!-- Project VIDEO -->
 
