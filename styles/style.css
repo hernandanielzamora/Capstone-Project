@@ -330,6 +330,7 @@ a {
 }
 
 /* Footer */
+
 /* Footer (Social) */
 .footer-container {
   background-color: #fff;
@@ -354,6 +355,7 @@ a {
 }
 
 /* ABOUT PAGE */
+
 /* Header */
 .active-link {
   color: #ef513c;
@@ -626,6 +628,7 @@ a {
   }
 
   /* ABOUT ME PAGE */
+
   /* Main Section */
   .aboutme-header {
     width: 70%;
@@ -655,7 +658,7 @@ a {
     font-size: 1.5em;
     margin-bottom: 2%;
   }
-  
+
   .scholar-img-container {
     display: flex;
     justify-content: center;
@@ -685,13 +688,12 @@ a {
     width: 80%;
     font-size: 1.5em;
   }
-
 }
 
 /* QUERY 1024 -> 1440 */
+
 /* 1024 changes */
 @media only screen and (min-width: 1024px) {
-
   /* Nav-Bar */
   .navbar-logo {
     margin-left: 120px;
@@ -776,6 +778,7 @@ a {
   }
 
   /* ABOUTME PAGE */
+
   /* Main */
   .aboutme-title {
     font-size: 4em;
@@ -791,9 +794,9 @@ a {
 }
 
 /* QUERY 1440 -> 2560 */
+
 /* 1440 changes */
 @media only screen and (min-width: 1440px) {
-
   /* Header */
   .navbar-logo {
     margin-left: 200%;
@@ -911,8 +914,8 @@ a {
     font-size: 1.5em;
   }
 
-
   /* ABOUT ME */
+
   /* Main */
   .aboutme-title {
     width: 60%;
