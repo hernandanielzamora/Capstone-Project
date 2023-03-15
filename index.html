@@ -40,11 +40,6 @@
       </div>
 
       <nav class="nav-bar-container">
-        <div class="ham-menu" id="ham-menu">
-          <div class="bar bar-1"></div>
-          <div class="bar bar-2"></div>
-          <div class="bar bar-3"></div>
-        </div>
         <div>
           <a href="#"><img src="media/cogress-logo.png" alt="Congress Logo" class="navbar-logo"></a>
         </div>
@@ -53,7 +48,8 @@
           <li class="desktop-list"><a class="desktop-link" href="#program">Program</a></li>
           <li class="desktop-list"><a class="desktop-link" href="#speakers">Speakers</a></li>
           <li class="desktop-list"><a class="desktop-link" href="#sponsers">Sponsers</a></li>
-          <li class="desktop-list"><a class="desktop-link last-desktop-link" href="https://techandsoc.com/2023-conference">Campain</a>
+          <li class="desktop-list"><a class="desktop-link last-desktop-link"
+              href="https://techandsoc.com/2023-conference">Campain</a>
           </li>
         </ul>
       </nav>
@@ -62,6 +58,8 @@
     <!-- OffCanvas Menu -->
     <aside class="mobile-navbar">
       <ul class="offcanvas-menu">
+        <li class="offcanvas-menu-item first-offcanvas-menu-item"><button class="menu-closing-btn"
+            data-close-button>&times;</button></li>
         <li class="offcanvas-menu-item first-offcanvas-menu-item"><a class="offcanvas-menu-link"
             href="pages/aboutme.html">About</a></li>
         <div class="offcanvas-bar"></div>
@@ -80,6 +78,11 @@
 
   <!-- Hero Section -->
   <section class="main-invite-container">
+    <div class="ham-menu" id="ham-menu">
+      <div class="bar bar-1"></div>
+      <div class="bar bar-2"></div>
+      <div class="bar bar-3"></div>
+    </div>
     <div class="invite-holder">
       <div class="title-container">
         <h3 class="invite-subtitle">Welcome to the</h3>
@@ -110,51 +113,65 @@
     </div>
 
     <div class="card-holder">
-      <div class="program-content">
-        <div class="program-image">
-          <img src="media/program_icon_01.png" alt="">
+      <article>
+        <div class="program-content">
+          <div class="program-image">
+            <img src="media/program_icon_01.png" alt="">
+          </div>
+          <h3 class="program-subtitle">Lecture</h3>
+          <p class="program-text">Listen to our main and secondary speakers. Take the chance to chat with them in our
+            blended sessions!</p>
         </div>
-        <h3 class="program-subtitle">Lecture</h3>
-        <p class="program-text">Listen to our main and secondary speakers. Take the chance to chat with them in our
-          blended sessions!</p>
-      </div>
+      </article>
 
-      <div class="program-content">
-        <div class="program-image">
-          <img src="media/program_icon_02.png" alt="">
+      <article>
+        <div class="program-content">
+          <div class="program-image">
+            <img src="media/program_icon_02.png" alt="">
+          </div>
+          <h3 class="program-subtitle">Content</h3>
+          <p class="program-text">Theme 1: Histories of Technology - Theme 2: Knowledge Makers - Theme 3: Social
+            Realities
+          </p>
         </div>
-        <h3 class="program-subtitle">Content</h3>
-        <p class="program-text">Theme 1: Histories of Technology - Theme 2: Knowledge Makers - Theme 3: Social Realities
-        </p>
-      </div>
+      </article>
 
-      <div class="program-content">
-        <div class="program-image">
-          <img src="media/program_icon_03.png" alt="">
+      <article>
+        <div class="program-content">
+          <div class="program-image">
+            <img src="media/program_icon_03.png" alt="">
+          </div>
+          <h3 class="program-subtitle">Forum</h3>
+          <p class="program-text">Learn more about the conference in our forums, where you can chat with other
+            participants.
+          </p>
         </div>
-        <h3 class="program-subtitle">Forum</h3>
-        <p class="program-text">Learn more about the conference in our forums, where you can chat with other
-          participants.
-        </p>
-      </div>
+      </article>
 
-      <div class="program-content">
-        <div class="program-image">
-          <img src="media/program_icon_04.png" alt="">
+      <article>
+        <div class="program-content">
+          <div class="program-image">
+            <img src="media/program_icon_04.png" alt="">
+          </div>
+          <h3 class="program-subtitle">Events</h3>
+          <p class="program-text">Take part in special events in between conferences. Participate of Conference Dinner,
+            In
+            Person Blended Valletta Walking Tour, and much more! </p>
         </div>
-        <h3 class="program-subtitle">Events</h3>
-        <p class="program-text">Take part in special events in between conferences. Participate of Conference Dinner, In
-          Person Blended Valletta Walking Tour, and much more! </p>
-      </div>
+      </article>
 
-      <div class="program-content">
-        <div class="program-image">
-          <img src="media/program_icon_05.png" alt="">
+      <article>
+        <div class="program-content">
+          <div class="program-image">
+            <img src="media/program_icon_05.png" alt="">
+          </div>
+          <h3 class="program-subtitle">Blended</h3>
+          <p class="program-text">You can also take part of our blended sessions, explicitly designed to make the most
+            of
+            both online and in-person social knowledge processes</p>
         </div>
-        <h3 class="program-subtitle">Blended</h3>
-        <p class="program-text">You can also take part of our blended sessions, explicitly designed to make the most of
-          both online and in-person social knowledge processes</p>
-      </div>
+      </article>
+
 
       <div class="show-all-program">
         <a href="https://cgscholar.com/cg_event/events/T23en/schedule">See the whole program ></a>
@@ -176,7 +193,7 @@
     <div class="speakers-list" id="speakers-container">
     </div>
     <div class="show-all-speakers">
-      <a href="https://techandsoc.com/2023-conference">See the other speakers ></a>
+
     </div>
   </section>
 
@@ -188,13 +205,14 @@
       <div class="program-bar"></div>
     </div>
     <div class="sponsors-container">
-      <div class="sponsor"><img src="media/sponsor-01.jpg" alt=""></div>
-      <div class="sponsor"><img src="media/sponsor-02.png" alt=""></div>
-      <div class="sponsor"><img src="media/sponsor-03.png" alt=""></div>
-      <div class="sponsor"><img src="media/sponsor-04.png" alt=""></div>
-      <div class="sponsor"><img src="media/sponsor-05.png" alt=""></div>
-      <div class="sponsor"><img src="media/sponsor-06.jpg" alt=""></div>
-      <div class="sponsor"><img src="media/sponsor-07.jpg" alt=""></div>
+      <div class="sponsor"><img src="media/sponsor-01.jpg" alt="" class="sponsor-logo"></div>
+      <div class="sponsor"><img src="media/sponsor-02.png" alt="" class="sponsor-logo"></div>
+      <div class="sponsor"><img src="media/sponsor-03.png" alt="" class="sponsor-logo"></div>
+    </div>
+    <div class="sponsors-container">
+      <div class="sponsor"><img src="media/sponsor-04.png" alt="" class="sponsor-logo"></div>
+      <div class="sponsor"><img src="media/sponsor-05.png" alt="" class="sponsor-logo"></div>
+      <div class="sponsor"><img src="media/sponsor-06.jpg" alt="" class="sponsor-logo"></div>
     </div>
   </section>
 
@@ -203,37 +221,12 @@
   <footer>
     <div class="footer-container">
       <div class="social">
-        <h5 class="social-title">Stay Connected</h3>
-          <ul class="social-list-cont">
-            <li class="social-item"><a href="https://www.facebook.com/TechnologyKnowledgeandSociety"><i
-                  class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
-            <li class="social-item"><a href="https://twitter.com/ontechsociety"><i
-                  class="fa-brands fa-square-twitter fa-2xl"></i></a></li>
-            <li class="social-item"><a href="https://www.instagram.com/commongroundresearchnetworks/"><i
-                  class="fa-brands fa-square-instagram fa-2xl"></i></a></li>
-            <li class="social-item"><a href="https://www.youtube.com/playlist?list=PLA33E7B00ECD9B616"><i
-                  class="fa-brands fa-square-youtube fa-2xl"></i></a></li>
-            <li class="social-item"><a href="https://www.linkedin.com/company/common-ground-research-networks/"><i
-                  class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-          </ul>
-      </div>
-
-      <div class="support">
-        <h5 class="support-title">Get Support</h3>
-          <p class="support-text">Have a question? You can get help by visiting the <a
-              href="https://cgscholar.com/cg_support/en">help center.</a></p>
-      </div>
-
-      <div class="contact">
-        <h5 class="contact-title">Common Ground Research Networks</h5>
-        <ul class="contact-list">
-          <li class="contact-item">University of Illinois Research Park</li>
-          <li class="contact-item">60 Hazelwood Drive</li>
-          <li class="contact-item contact-item-lastlist">Champaign, IL 61820 USA</li>
-          <li class="contact-item">Phone: +1-217-328-0405</li>
-          <li class="contact-item">Fax: +1-217-328-0435</li>
-          <li class="contact-item">Email: support@cgnetworks.org</li>
-        </ul>
+        <img src="media/cogress-logo.png" alt="Congress Logo" class="footer-logo">
+        <div class="footer-text">
+          <h5 class="support-title">Get Support</h3>
+            <p class="support-text">Have a question? You can get help by visiting the <a
+                href="https://cgscholar.com/cg_support/en">help center.</a></p>
+        </div>
       </div>
     </div>
   </footer>

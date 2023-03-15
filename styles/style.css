@@ -35,6 +35,17 @@ a {
   justify-content: flex-start;
   align-items: center;
   margin-right: 22%;
+  padding-top: 5%;
+}
+
+.menu-closing-btn {
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2.5em;
+  margin-bottom: -20%;
 }
 
 .bar {
@@ -50,6 +61,7 @@ a {
   width: 5em;
   height: 5em;
   margin-bottom: 10%;
+  display: none;
 }
 
 .desktop-navbar {
@@ -153,18 +165,20 @@ a {
 }
 
 .date-info {
-  font-size: 1.3em;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-left: 5%;
   width: 90%;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0;
 }
 
 .location-info {
   font-size: 1.3em;
-  font-weight: bold;
+  font-weight: 700;
   width: 90%;
-  text-align: center;
+  text-align: left;
+  margin-left: 5%;
 }
 
 /* Program Info Section */
@@ -222,9 +236,8 @@ a {
 }
 
 .show-all-program {
-  text-align: right;
+  text-align: center;
   padding-top: 5%;
-  margin-right: 2%;
 }
 
 .show-all-program a {
@@ -245,22 +258,18 @@ a {
 }
 
 .speaker {
-  float: left;
-  width: 100%;
-  height: auto;
-  margin-bottom: 1.5em;
-  margin-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5%;
+  margin-right: 4%;
 }
 
 .speaker-image {
-  margin-right: 0.5em;
   margin-left: 2em;
-  float: left;
+  align-self: center;
 }
 
 .speaker-name {
-  text-align: left;
-  vertical-align: bottom;
   font-size: 1em;
   margin-top: 0.2em;
 }
@@ -273,22 +282,15 @@ a {
 .speaker-position {
   font-size: 0.81em;
   color: #ff4f38;
-  text-align: left;
-}
-
-.blank-space {
-  width: 24px;
-  margin-bottom: 3.4em;
 }
 
 .speaker-text {
-  padding: 1px 2em;
   text-align: justify;
   font-size: 0.81em;
 }
 
 .show-all-speakers {
-  text-align: right;
+  text-align: center;
   padding-bottom: 8%;
 }
 
@@ -300,8 +302,13 @@ a {
 }
 
 /* Sponsors */
+
+#sponsers {
+  background-color: #414246;
+}
+
 .sponsors-title {
-  color: #272a32;
+  color: #8f8f91;
   text-align: center;
   padding-top: 10%;
   margin-top: 5%;
@@ -309,8 +316,7 @@ a {
 
 .sponsors-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -318,81 +324,36 @@ a {
   margin-bottom: 5%;
 }
 
-/* Footer */
+.sponsor-logo {
+  width: 7em;
+  height: 5em;
+}
 
+/* Footer */
 /* Footer (Social) */
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #0f1b26;
+  background-color: #fff;
+  margin-top: 20%;
 }
 
-.social-title {
-  color: #fff;
-  padding-top: 40%;
-  font-size: 1.5em;
-}
-
-.social-list-cont {
+.social {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: inherit;
-  padding: inherit;
-  margin-top: 10%;
 }
 
-.social-item {
-  margin-right: 5%;
+.footer-logo {
+  width: 5em;
+  height: 5em;
+  margin: 5%;
 }
 
-.social-item i {
-  color: #e0dcdc;
-}
-
-/* Footer (Support) */
-.support {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
-}
-
-.support-title {
-  color: #fff;
-  font-size: 1.5em;
-}
-
-.support-text {
-  color: #fff;
-  padding: 1% 5%;
-}
-
-.support-text a {
-  text-decoration: none;
-  color: #ec5242;
-}
-
-/* Footer (Contact) */
-.contact {
-  color: #fff;
-  margin-top: 5%;
-}
-
-.contact-title {
-  margin-bottom: 5%;
-  font-size: 1.2em;
-}
-
-.contact-item-lastlist {
-  margin-bottom: 5%;
+.footer-text {
+  text-align: center;
+  padding-right: 10%;
 }
 
 /* ABOUT PAGE */
-
 /* Header */
 .active-link {
   color: #ef513c;
@@ -478,13 +439,14 @@ a {
 
 .scholar-img-container img {
   width: 70%;
-  margin-bottom: 20%;
+  margin-bottom: 5%;
 }
 
 /* About - Bookstore Section */
 .bookstore-section {
   margin-top: 20%;
   margin-bottom: 20%;
+  border-bottom: 1px solid #dfdfdf;
 }
 
 .bookstore-title {
@@ -494,6 +456,11 @@ a {
 
 .bookstore-content {
   text-align: center;
+}
+
+.logo-text {
+  padding: 5%;
+  text-align: justify;
 }
 
 /* DESKTOP VERSION */
@@ -544,7 +511,8 @@ a {
   }
 
   .navbar-logo {
-    margin-left: 20%;
+    display: initial;
+    margin-left: 20px;
     margin-top: 2%;
   }
 
@@ -589,6 +557,14 @@ a {
     background-color: rgb(247, 247, 248);
   }
 
+  .date-info {
+    font-size: 1.5em;
+  }
+
+  .location-info {
+    font-size: 1.6em;
+  }
+
   /* Program */
   .program-content {
     margin: auto auto 5% 3px;
@@ -627,13 +603,13 @@ a {
   }
 
   .show-all-speakers {
-    padding-top: 155%;
+    padding-top: 130%;
   }
 
   /* Sponsors */
   .sponsors-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-left: 10%;
   }
 
@@ -650,7 +626,6 @@ a {
   }
 
   /* ABOUT ME PAGE */
-
   /* Main Section */
   .aboutme-header {
     width: 70%;
@@ -671,7 +646,6 @@ a {
   }
 
   /* Scholar Section */
-
   .scholar-title {
     font-size: 2em;
     margin-top: -10%;
@@ -679,20 +653,64 @@ a {
 
   .scholar-subtitle {
     font-size: 1.5em;
+    margin-bottom: 2%;
+  }
+  
+  .scholar-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  .scholar-img-container img {
+    width: 90%;
+    height: 70%;
   }
 
   /* Bookstore Section */
-
   .bookstore-title {
     font-size: 2em;
     margin-top: -10%;
   }
+
+  .bookstore-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-text {
+    width: 80%;
+    font-size: 1.5em;
+  }
+
 }
 
 /* QUERY 1024 -> 1440 */
-
 /* 1024 changes */
 @media only screen and (min-width: 1024px) {
+
+  /* Nav-Bar */
+  .navbar-logo {
+    margin-left: 120px;
+    margin-bottom: 1%;
+  }
+
+  .last-desktop-link {
+    margin-right: 120px;
+  }
+
+  /* Invite */
+  .date-info {
+    margin-left: 1%;
+  }
+
+  .location-info {
+    margin-left: 1%;
+  }
+
   /* Main Program */
   .card-holder {
     margin-left: 2%;
@@ -706,23 +724,27 @@ a {
   /* Speakers section */
   .speaker {
     margin-top: 3%;
+    margin-bottom: 1%;
+    margin-right: -1%;
+    margin-left: -1%;
+  }
+
+  .speaker-image {
+    margin-left: 40%;
+    margin-bottom: 40%;
   }
 
   .speaker-name {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: -1%;
   }
 
   .speaker-position {
-    font-size: 1em;
-  }
-
-  .blank-space {
-    margin-bottom: 10px;
+    font-size: 0.7em;
   }
 
   .speaker-text {
-    font-size: 1em;
+    font-size: 0.6em;
   }
 
   .show-all-speakers {
@@ -731,11 +753,16 @@ a {
 
   /* Partners */
   .sponsors-container {
-    margin-left: 15%;
+    margin-left: 6%;
   }
 
   .sponsor {
     margin: 10%;
+  }
+
+  .sponsor-logo {
+    width: initial;
+    height: initial;
   }
 
   /* Footer */
@@ -749,7 +776,6 @@ a {
   }
 
   /* ABOUTME PAGE */
-
   /* Main */
   .aboutme-title {
     font-size: 4em;
@@ -765,9 +791,9 @@ a {
 }
 
 /* QUERY 1440 -> 2560 */
-
 /* 1440 changes */
 @media only screen and (min-width: 1440px) {
+
   /* Header */
   .navbar-logo {
     margin-left: 200%;
@@ -825,42 +851,46 @@ a {
   }
 
   /* Speakers */
-
   .speakers-list {
     padding-left: 10%;
     padding-right: 10%;
   }
 
   .speaker {
-    margin-top: 10%;
+    margin-bottom: 15%;
   }
 
   .speakers-title {
-    font-size: 3em;
+    font-size: 2em;
     margin-top: -5%;
   }
 
-  .speaker-position {
+  .speaker-name {
     font-size: 1.5em;
   }
 
+  .speaker-position {
+    font-size: 1em;
+  }
+
   .speaker-text {
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
 
   .show-all-speakers {
     font-size: 1.5em;
-    padding-top: 89%;
+    margin-left: 40%;
+    width: fit-content;
+    height: fit-content;
   }
 
   /* Partners */
-
   .sponsors-title {
     font-size: 3em;
   }
 
   .sponsors-container {
-    margin-left: 20%;
+    margin-left: 10%;
   }
 
   /* Footer */
@@ -868,8 +898,9 @@ a {
     margin-left: 5%;
   }
 
-  .social-title {
-    font-size: 2em;
+  .footer-logo {
+    width: 10em;
+    height: 10em;
   }
 
   .support-title {
@@ -880,18 +911,9 @@ a {
     font-size: 1.5em;
   }
 
-  .contact-title {
-    font-size: 2em;
-  }
-
-  .contact-item {
-    font-size: 1.5em;
-  }
 
   /* ABOUT ME */
-
   /* Main */
-
   .aboutme-title {
     width: 60%;
     margin-left: 20%;
